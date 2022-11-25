@@ -1,9 +1,9 @@
 function Footer() {
   return (
-    <div>
+    <footer>
       <img src="" alt="LOGO" />
       <span>© 2020 Kasa. All rights reserved</span>
-    </div>
+    </footer>
   );
 }
 export default Footer;

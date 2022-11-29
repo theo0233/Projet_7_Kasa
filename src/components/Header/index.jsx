@@ -4,7 +4,7 @@ import KasaLogo from "../../assets/LOGO.svg";
 
 const HeaderContainer = styled.div`
   position: absolute;
-  width: 1240px;
+  width: 100%;
   height: 68px;
   left: 100px;
   top: 40px;
@@ -16,7 +16,7 @@ const Logo = styled.img`
   right: 83.04%;
   top: 0%;
   bottom: 0%;
-  colors: #ff6060;
+  color: #ff6060;
 `;
 
 const NavContainer = styled.nav`
@@ -27,13 +27,19 @@ const NavContainer = styled.nav`
   bottom: 25%;
 `;
 
+const StyledLink = styled(Link)`
+  font-size: 24px;
+  text-decoration: none;
+  color: #ff6060;
+`;
+
 function Header() {
   return (
     <HeaderContainer>
       <Logo src={KasaLogo} />
       <NavContainer>
-        <Link to="/">Accueil</Link>
-        <Link to="/a_propos">A Propos</Link>
+        <StyledLink to="/">Accueil</StyledLink>
+        <StyledLink to="/a_propos">A Propos</StyledLink>
       </NavContainer>
     </HeaderContainer>
   );

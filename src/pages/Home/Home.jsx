@@ -1,6 +1,6 @@
-import homeImg from "../assets/IMG_home.png";
+import homeImg from "../../assets/IMG_home.png";
 import "./Home.scss";
-import Hosts from "../assets/data/logements.json";
+import Hosts from "../../assets/data/logements.json";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
       <div className="hostWrap">
         {Hosts.map((host) => (
           <Link
-            to={`/FicheLogement/${host.id}`}
+            to={`/location/${host.id}`}
             className="host__item"
             key={host.id}
           >

@@ -8,6 +8,7 @@ const HeaderContainer = styled.div`
   height: 68px;
   left: 100px;
   top: 40px;
+  margin-bot: 160px;
 `;
 
 const Logo = styled.img`

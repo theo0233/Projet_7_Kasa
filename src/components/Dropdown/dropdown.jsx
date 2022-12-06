@@ -1,5 +1,6 @@
 import { useState } from "react";
 import vector from "../../assets/Vector.png";
+
 function Dropdown({ title, text }) {
   const [isOpen, setIsOpen] = useState(false);
 

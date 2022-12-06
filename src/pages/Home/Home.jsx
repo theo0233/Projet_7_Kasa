@@ -12,7 +12,7 @@ function Home() {
           <img src={homeImg} alt="litorral,falaises"></img>
         </div>
       </section>
-      <div className="hostWrap">
+      <div className="hostWrap">                                       
         {Hosts.map((host) => (
           <Link
             to={`/location/${host.id}`}

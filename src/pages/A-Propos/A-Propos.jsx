@@ -1,6 +1,6 @@
 function Apropos() {
   return (
-    <div>
+    <div >
       <span>Fiabilité</span>
       <span>Respect</span>
       <span>Service </span>

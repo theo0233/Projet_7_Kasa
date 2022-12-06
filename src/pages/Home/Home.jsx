@@ -2,16 +2,12 @@ import homeImg from "../../assets/IMG_home.png";
 import "./Home.scss";
 import Hosts from "../../assets/data/logements.json";
 import { Link } from "react-router-dom";
+import Banner from "../../components/Banner/Banner";
 
 function Home() {
   return (
-    <div className="home">
-      <section className="home__section">
-        <p>Chez vous, partout et ailleurs</p>
-        <div className="home__img">
-          <img src={homeImg} alt="litorral,falaises"></img>
-        </div>
-      </section>
+    <div className="body">
+      <Banner image={homeImg} text="Chez vous, partout et ailleurs" />
       <div className="hostWrap">
         {Hosts.map((host) => (
           <Link

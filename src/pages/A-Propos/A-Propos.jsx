@@ -2,6 +2,7 @@ import React from "react";
 import Dropdown from "../../components/Dropdown/dropdown";
 import Banner from "../../components/Banner/Banner";
 import Apropos_img from "../../assets/Apropos-image.png";
+import "./A-Propos.scss";
 
 function Apropos() {
   return (

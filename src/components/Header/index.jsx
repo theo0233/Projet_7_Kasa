@@ -32,6 +32,7 @@ const StyledLink = styled(Link)`
   font-size: 24px;
   text-decoration: none;
   color: #ff6060;
+  margin-right: 20px;
 `;
 
 function Header() {

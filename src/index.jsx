@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Apropos from "./pages/A-Propos/A-Propos";
 import Header from "./components/Header";
-import Error from "./pages/Error/index";
+import Error from "./pages/Error/error";
 import Footer from "./components/Footer";
 import FicheLogement from "./pages/Fiche-Logement/FicheLogement";
 

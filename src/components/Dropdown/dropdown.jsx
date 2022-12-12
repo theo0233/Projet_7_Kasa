@@ -12,15 +12,16 @@ function Dropdown({ title, text }) {
         <button className="vector-dd" onClick={() => setIsOpen(false)}>
           <img src={vector} alt="close" />
         </button>
-        <div className="text-dd">{text}</div>
       </div>
+      <div className="text-dd">{text}</div>
+
       {}
     </div>
   ) : (
     <div className="closed-dropdown">
       <div className="head-dd">
         <div className="title-dd"> {title}</div>
-        <button className="head-dd" onClick={() => setIsOpen(true)}>
+        <button className="vector-dd" onClick={() => setIsOpen(true)}>
           <img src={vector} alt="open" />
         </button>
       </div>

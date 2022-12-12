@@ -2,12 +2,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
     margin: 0;
     left: 200px;
     margin: 30px 0px 30px 130px;
 }
-
+.dropdown {
+    width: 80%;
+    margin: 0;
+    left: 200px;
+    margin: 30px 0px 30px 130px;
+}
 .head-dd {
     align-items: center;
     justify-content: space-between;
@@ -38,5 +43,6 @@
 .text-dd {
     background-color: #f6f6f6;
     color: #ff6060;
+    font-size: 24px;
    
 }

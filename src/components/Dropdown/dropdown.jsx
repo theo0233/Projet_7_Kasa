@@ -1,5 +1,6 @@
 import { useState } from "react";
 import vector from "../../assets/Vector.png";
+import "./Dropdown.css";
 
 function Dropdown({ title, text }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ function Dropdown({ title, text }) {
     <div className="dropdown">
       <div className="head-dd">
         <div className="title-dd"> {title}</div>
-        <button onClick={() => setIsOpen(false)}>
+        <button className="vector-dd" onClick={() => setIsOpen(false)}>
           <img src={vector} alt="close" />
         </button>
         <div className="text-dd">{text}</div>

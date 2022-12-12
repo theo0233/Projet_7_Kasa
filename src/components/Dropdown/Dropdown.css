@@ -1,0 +1,32 @@
+.dropdown {
+    border-radius: 15px;
+}
+
+.head-dd {
+    align-items: center;
+    background-color: #ff6060;
+    border-radius: 5px;
+    display: inline-flex;
+    height: 25%;
+    min-height: 50px;
+    width: 100%;
+}
+
+.title-dd {
+    color: #ffffff;
+    
+    margin: 5px 10px;
+}
+
+.vector-dd {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.text-dd {
+    background-color: #f6f6f6;
+    color: #ff6060;
+   
+}

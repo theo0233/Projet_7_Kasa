@@ -1,6 +1,4 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 import { useState } from "react";
 import RightVector from "../../assets/VectorRight.png";
 import LeftVector from "../../assets/VectorLeft.png";
@@ -37,14 +35,9 @@ const PicturesSlider = ({ slides }) => {
     cursor: "pointer",
     zIndex: 1,
   };
-  const whichPosition = {
-    position: "absolute",
-    color: "#fff",
-    fontSize: "30px",
-  };
 
   const goPrevious = () => {
-    const isFirstSlide = currentIndex === 1;
+    const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
@@ -64,20 +57,10 @@ const PicturesSlider = ({ slides }) => {
         <img src={RightVector} alt="" />
       </div>
       <div style={slideStyle}></div>
+      <span className="carrousel__legend">
+        {currentIndex + 1}/{slides.length}
+      </span>
     </div>
   );
 };
 export default PicturesSlider;
-
-/* Carousel with library
-function Slider({ slides }) { 
-  console.log(slides);
-  return (
-    <Carousel>
-      {slides.map((slide, index) => (
-        <img src={slide} key={index} alt="" />
-      ))}
-    </Carousel>
-  );
-}
-export default Slider; */

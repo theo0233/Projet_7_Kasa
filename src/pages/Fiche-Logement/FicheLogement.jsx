@@ -26,6 +26,11 @@ function FicheLogement() {
   const pickedLoc = useParams();
   const dataLocation = data;
   const location = dataLocation.find((item) => item.id === pickedLoc.id);
+  const stuff = location.equipments.map((e, index) => (
+    <li key={index} className="">
+      {e}
+    </li>
+  ));
 
   return (
     <div className="ficheLogement">
@@ -41,7 +46,7 @@ function FicheLogement() {
       </div>
       <div style={rental_detail}>
         <Dropdown title="Description" text={location.description}></Dropdown>
-        <Dropdown title="Équipements" text={location.equipments}></Dropdown>
+        <Dropdown title="Équipements" text={stuff}></Dropdown>
       </div>
     </div>
   );

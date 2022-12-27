@@ -5,6 +5,7 @@ import Dropdown from "../../components/Dropdown/dropdown";
 import Slider from "../../components/Slider/Slider";
 import Rate from "../../components/Rate/Rate";
 import Tags from "../../components/Tags/tags";
+import { Redirect } from "react-router";
 
 const containerSlider = {
   width: "500px",
@@ -26,6 +27,11 @@ function FicheLogement() {
   const pickedLoc = useParams();
   const dataLocation = data;
   const location = dataLocation.find((item) => item.id === pickedLoc.id);
+
+  if (location === undefined) {
+    return <Redirect to="/not_found" />;
+  }
+
   const stuff = location.equipments.map((e, index) => (
     <li key={index} className="">
       {e}

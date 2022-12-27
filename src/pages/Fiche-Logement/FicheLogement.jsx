@@ -5,6 +5,7 @@ import Dropdown from "../../components/Dropdown/dropdown";
 import Slider from "../../components/Slider/Slider";
 import Rate from "../../components/Rate/Rate";
 import Tags from "../../components/Tags/tags";
+import Host from "../../components/Host/Host";
 import { Redirect } from "react-router";
 
 const containerSlider = {
@@ -24,15 +25,15 @@ const tagContainer = {
 };
 
 function FicheLogement() {
-  const pickedLoc = useParams();
+  const pickedRent = useParams();
   const dataLocation = data;
-  const location = dataLocation.find((item) => item.id === pickedLoc.id);
+  const rent = dataLocation.find((item) => item.id === pickedRent.id);
 
-  if (location === undefined) {
+  if (rent === undefined) {
     return <Redirect to="/not_found" />;
   }
 
-  const stuff = location.equipments.map((e, index) => (
+  const stuff = rent.equipments.map((e, index) => (
     <li key={index} className="">
       {e}
     </li>
@@ -41,17 +42,21 @@ function FicheLogement() {
   return (
     <div className="ficheLogement">
       <div style={containerSlider}>
-        <Slider slides={location.pictures} />
+        <Slider slides={rent.pictures} />
       </div>
-      <h1>{location.title}</h1>
-      <Rate rate={location.rating} />
+      <div className="rent_title">
+        <h2>{rent.title}</h2>
+        <p>{rent.location}</p>
+      </div>
+      <Host name={rent.host.name} picture={rent.host.picture} />
       <div style={tagContainer}>
-        {location.tags.map((tag, index) => (
+        {rent.tags.map((tag, index) => (
           <Tags key={tag} tag={tag} />
         ))}
       </div>
+      <Rate rate={rent.rating} />
       <div style={rental_detail}>
-        <Dropdown title="Description" text={location.description}></Dropdown>
+        <Dropdown title="Description" text={rent.description}></Dropdown>
         <Dropdown title="Équipements" text={stuff}></Dropdown>
       </div>
     </div>

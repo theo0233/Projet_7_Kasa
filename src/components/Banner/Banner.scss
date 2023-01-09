@@ -1,24 +1,25 @@
 .banner {
     border-radius: 25px;
-    height: 225px;
+    width: 86%;
     margin-top: 150px;
-    
+    margin-left: 80px;
     position: relative;
 }
 
 .banner-img {
     border-radius: 25px;
     height: 100%;
-    object-fit: cover;
     width: 100%;
     filter: brightness(65%)
 }
 
 .banner-text {
     color: #ffffff;
-    font-size: 48px;
+    font-size: 40px;
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 700px;
+    text-align: center;
 }

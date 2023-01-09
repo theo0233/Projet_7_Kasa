@@ -1,0 +1,23 @@
+.hostPicture  {
+        display: flex;
+        margin-left: 10px;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: #c4c4c4;
+
+       
+}
+.hostPicture img {
+    border-radius: 50%;
+}
+
+.hostName {
+    width: 70px;
+    height: 66px;
+    text-align: center;
+    color: #ff6060;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}

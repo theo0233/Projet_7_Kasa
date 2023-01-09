@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import RightVector from "../../assets/VectorRight.png";
 import LeftVector from "../../assets/VectorLeft.png";
+import "../Slider/Slider.scss";
 
 const PicturesSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,6 +17,7 @@ const PicturesSlider = ({ slides }) => {
     borderRadius: "10px",
     backgroundPosition: "center",
     backgroundSize: "cover",
+    objectFit: "cover",
   };
   const leftArrow = {
     position: "absolute",
@@ -57,7 +59,7 @@ const PicturesSlider = ({ slides }) => {
         <img src={RightVector} alt="" />
       </div>
       <div style={slideStyle}></div>
-      <span className="carrousel__legend">
+      <span className="carrousel-legend">
         {currentIndex + 1}/{slides.length}
       </span>
     </div>

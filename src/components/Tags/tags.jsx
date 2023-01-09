@@ -1,5 +1,4 @@
 const tagDiv = {
-  marginLeft: "10px",
   borderRadius: "10px",
   backgroundColor: "#ff6060",
   padding: "2px 10px 0 10px",

@@ -1,0 +1,33 @@
+.ficheLogement {
+    width: 86%;
+    margin: 150px 0px 30px 82px;
+   
+}
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.rent_title {
+    color: #ff6060;
+}
+.rent_title div {
+    font-size: 30px;
+    font-weight: 500;
+}
+.rent_title p {
+    margin-top: 0;
+    font-size: 18px;
+}
+.host { 
+    display: flex;
+    justify-content: space-around;
+    
+}
+.rating {
+    display: flex;
+    justify-content: flex-end;
+}
+.rate img {
+    margin-right: 5px;
+}

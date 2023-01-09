@@ -4,7 +4,7 @@ import KasaLogo from "../../assets/LOGO.svg";
 
 const HeaderContainer = styled.div`
   position: absolute;
-  width: 100%;
+  width: 86%;
   height: 68px;
   left: 100px;
   top: 40px;
@@ -22,10 +22,10 @@ const Logo = styled.img`
 
 const NavContainer = styled.nav`
   position: absolute;
-  left: 75.08%;
   right: 0%;
   top: 25%;
   bottom: 25%;
+  marginleft: 10px;
 `;
 
 const StyledLink = styled(Link)`

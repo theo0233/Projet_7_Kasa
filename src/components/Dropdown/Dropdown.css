@@ -1,20 +1,18 @@
 .closed-dropdown {
     display: flex;
     justify-content: center;
-    
+    height:52px;
     width: 47%;
     left: 200px;
     margin-top: 15px;
-    
 }
 .dropdown {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 47%;
     left: 200px;
     margin-top: 15px;
+    background-color: #f6f6f6;
 }
 .head-dd {
     align-items: center;
@@ -22,19 +20,16 @@
     background-color: #ff6060;
     border-radius: 5px;
     display: flex;
-    height: 25%;
+    height: 52px;
     min-height: 50px;
     width: 100%;
-    
 }
-
 .title-dd {
     color: #ffffff;
     display: flex;
     justify-content: flex-start;
     margin: 5px 10px;
 }
-
 .vector-dd {
     display: flex;
     justify-content: flex-end;
@@ -42,10 +37,10 @@
     border: none;
     
 }
-
 .text-dd {
-    background-color: #f6f6f6;
     color: #ff6060;
-    font-size: 24px;
-   
+    font-size: 16px;
+    list-style: none;
+    max-width:100%; 
+    padding: 15px;
 }

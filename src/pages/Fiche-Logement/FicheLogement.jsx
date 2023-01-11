@@ -9,17 +9,10 @@ import Host from "../../components/Host/Host";
 import { Redirect } from "react-router";
 import "../Fiche-Logement/FicheLogement.scss";
 
-const containerSlider = {
-  width: "100%",
-  height: "400px",
-};
-const rental_detail = {
-  display: "flex",
-  justifyContent: "space-between",
-};
 const tagContainer = {
   fontSize: "14px",
   display: "flex",
+  marginBottom: "24px",
 };
 
 function FicheLogement() {
@@ -39,7 +32,7 @@ function FicheLogement() {
 
   return (
     <div className="ficheLogement">
-      <div style={containerSlider}>
+      <div className="containerSlider">
         <Slider slides={rent.pictures} />
       </div>
       <div className="wrap">
@@ -65,7 +58,7 @@ function FicheLogement() {
           </div>
         </div>
       </div>
-      <div style={rental_detail}>
+      <div className="rental_detail">
         <Dropdown title="Description" text={rent.description}></Dropdown>
         <Dropdown title="Équipements" text={stuff}></Dropdown>
       </div>

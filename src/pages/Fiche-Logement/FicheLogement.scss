@@ -3,6 +3,10 @@
     margin: 150px 0px 30px 82px;
    
 }
+.containerSlider {
+    width: 100%;
+    height: 400px;
+}
 .wrap {
     display: flex;
     justify-content: space-between;
@@ -19,6 +23,11 @@
     margin-top: 0;
     font-size: 18px;
 }
+.tagContainer {
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 24px;
+}
 .host { 
     display: flex;
     justify-content: space-around;
@@ -31,3 +40,9 @@
 .rate img {
     margin-right: 5px;
 }
+.rental_detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+

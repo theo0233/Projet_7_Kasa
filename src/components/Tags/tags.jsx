@@ -1,14 +1,9 @@
-const tagDiv = {
-  borderRadius: "10px",
-  backgroundColor: "#ff6060",
-  padding: "2px 10px 0 10px",
-  color: "white",
-};
+import "../Tags/tags.css";
 
 export default function Tags(tag) {
   console.log(tag);
   return (
-    <div style={tagDiv}>
+    <div className="tagDiv">
       <span> {tag.tag} </span>
     </div>
   );

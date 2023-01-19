@@ -1,4 +1,12 @@
 .rate {
     display: flex;
     justify-content: flex-end;
+    order: 1;
+}
+/* Smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+.rate img {
+    width: 15px;
+}
 }

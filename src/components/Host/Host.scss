@@ -1,13 +1,12 @@
 .hostPicture  {
-        display: flex;
-        margin-left: 10px;
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        background: #c4c4c4;
-
-       
+    display: flex;
+    margin-left: 10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #c4c4c4;
 }
+
 .hostPicture img {
     border-radius: 50%;
 }
@@ -20,4 +19,28 @@
     font-size: 18px;
     font-weight: 500;
     margin-top: 10px;
+}
+
+/* Smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.host {
+    justify-content: flex-end;
+    align-items: center;
+    order: 2;
+}
+.hostName {
+    width: 32px;
+    margin: 0 11px 0 0;
+}
+.hostPicture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #c4c4c4;
+}
+.hostName {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
 }

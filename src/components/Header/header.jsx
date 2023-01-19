@@ -1,49 +1,24 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 import KasaLogo from "../../assets/LOGO.svg";
-
-const HeaderContainer = styled.div`
-  position: absolute;
-  width: 86%;
-  height: 68px;
-  left: 100px;
-  top: 40px;
-  margin-bot: 160px;
-`;
-
-const Logo = styled.img`
-  position: absolute;
-  left: 0%;
-  right: 83.04%;
-  top: 0%;
-  bottom: 0%;
-  color: #ff6060;
-`;
-
-const NavContainer = styled.nav`
-  position: absolute;
-  right: 0%;
-  top: 25%;
-  bottom: 25%;
-  marginleft: 10px;
-`;
-
-const StyledLink = styled(Link)`
-  font-size: 24px;
-  text-decoration: none;
-  color: #ff6060;
-  margin-right: 20px;
-`;
+import "../Header/header.scss";
 
 function Header() {
   return (
-    <HeaderContainer>
-      <Logo src={KasaLogo} />
-      <NavContainer>
-        <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/a_propos">A Propos</StyledLink>
-      </NavContainer>
-    </HeaderContainer>
+    <div className="wrapHead">
+      <div className="HeaderContainer">
+        <div className="Logo">
+          <img src={KasaLogo} alt="Logo de Kasa" />
+        </div>
+        <div className="NavContainer">
+          <NavLink className="link" to="/">
+            Accueil
+          </NavLink>
+          <NavLink className="link" to="/a_propos">
+            A Propos
+          </NavLink>
+        </div>
+      </div>
+    </div>
   );
 }
 

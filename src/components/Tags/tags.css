@@ -6,5 +6,11 @@
     height: 20px;
     margin-right:  10px;
 }
-
-;
+/* Smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .tagDiv {
+        border-radius: 5px;
+        height: 18px;
+        line-height: 16px;
+    }
+}

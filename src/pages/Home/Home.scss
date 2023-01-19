@@ -1,14 +1,16 @@
+.wrap_allLocation {
+    display: flex;
+    justify-content: center;
+    margin: 43px 0 43px 0;
+}
 
-.hostWrap {
+.allLocation {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background: #F6F6F6;
     border-radius: 25px;
     max-width: 86%;
-    margin-left: 82px;
-    margin-top: 45px;
-    
 }
 
 .host__item {
@@ -42,4 +44,17 @@
     width: 350px;
     height: 350px;
     object-fit: cover;
+}
+/* Smartphones  */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+.wrap_allLocation {
+    margin: 22px 0 20px 0;
+}
+.allLocation {
+    background: none;
+}
+.host__item {
+    max-width: 100%;
+    margin: 0 0 20px 0;
+}
 }

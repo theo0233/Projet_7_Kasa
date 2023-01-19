@@ -1,15 +1,16 @@
 .banner {
     border-radius: 25px;
-    width: 86%;
-    margin-top: 150px;
-    margin-left: 80px;
-    position: relative;
+    position: relative;       
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 .banner-img {
     border-radius: 25px;
     height: 100%;
-    width: 100%;
+    width: 86%;
+    object-fit: cover;
     filter: brightness(65%)
 }
 
@@ -20,6 +21,23 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 700px;
+    width: 100%;
     text-align: center;
+}
+/* Smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.banner {
+    margin-top: 10px;
+}
+.banner-img {
+    height: 110px;
+    border-radius: 10px;
+}
+.banner-text {
+    font-size: 23px;
+    width: 57%;
+    text-align:left; 
+    left: 40%;
+    line-height: 23px;
+}
 }

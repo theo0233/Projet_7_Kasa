@@ -1,0 +1,54 @@
+.wrapHead {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin: 10px 0 0 0;
+}
+.HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+}
+.Logo {
+    color: #ff6060;
+    
+}
+.NavContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+}
+.link {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #ff6060;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+    .wrapHead {
+        height: 60px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .Logo img {
+        width: 140px;
+    }
+
+    .link {
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+    .active {
+        text-decoration: underline;
+    }
+    .NavContainer {
+        width: 42%;
+    }
+}

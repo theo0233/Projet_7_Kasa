@@ -9,12 +9,6 @@ import Host from "../../components/Host/Host";
 import { Redirect } from "react-router";
 import "../Fiche-Logement/FicheLogement.scss";
 
-const tagContainer = {
-  fontSize: "14px",
-  display: "flex",
-  marginBottom: "24px",
-};
-
 function FicheLogement() {
   const pickedRent = useParams();
   const dataRent = data;
@@ -36,31 +30,32 @@ function FicheLogement() {
         <Slider slides={rent.pictures} />
       </div>
       <div className="wrap">
-        <div className="rentInfo-wrap">
-          <div className="containerRent">
-            <div className="rent_title">
-              <div>{rent.title}</div>
-              <p>{rent.location}</p>
-            </div>
-            <div style={tagContainer}>
-              {rent.tags.map((tag, index) => (
-                <Tags key={tag} tag={tag} />
-              ))}
-            </div>
+        <div className="containerRent">
+          <div className="rent_title">
+            <div>{rent.title}</div>
+            <p>{rent.location}</p>
+          </div>
+          <div className="tagContainer">
+            {rent.tags.map((tag, index) => (
+              <Tags key={tag} tag={tag} />
+            ))}
           </div>
         </div>
 
         <div className="host-wrap">
           <Host name={rent.host.name} picture={rent.host.picture} />
-
           <div className="rating">
             <Rate rate={rent.rating} />
           </div>
         </div>
       </div>
       <div className="rental_detail">
-        <Dropdown title="Description" text={rent.description}></Dropdown>
-        <Dropdown title="Équipements" text={stuff}></Dropdown>
+        <div className="wrap_dd">
+          <Dropdown title="Description" text={rent.description}></Dropdown>
+        </div>
+        <div className="wrap_dd">
+          <Dropdown title="Équipements" text={stuff}></Dropdown>
+        </div>
       </div>
     </div>
   );

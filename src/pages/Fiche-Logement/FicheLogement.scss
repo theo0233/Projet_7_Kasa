@@ -1,7 +1,9 @@
 .ficheLogement {
     width: 86%;
-    margin: 150px 0px 30px 82px;
-   
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
 }
 .containerSlider {
     width: 100%;
@@ -44,5 +46,40 @@
     display: flex;
     justify-content: space-between;
 }
+.wrap_dd {
+    width: 47%;
+}
 
+/* Smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
+.containerSlider {        
+    height: auto;
+}
+
+.rent_title div {
+    font-size: 18px;
+}
+.rent_title p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.tagContainer {
+    font-size: 10px;
+    margin-bottom: auto;
+}
+.wrap {
+    margin-top: 15px;
+    flex-direction: column;
+}
+.host-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.rental_detail {
+    flex-direction: column;
+}
+.wrap_dd {
+   width: 100%;
+}
+}

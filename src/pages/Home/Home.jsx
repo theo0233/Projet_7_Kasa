@@ -6,7 +6,7 @@ import Banner from "../../components/Banner/Banner";
 
 function Home() {
   return (
-    <div className="body">
+    <div>
       <Banner image={homeImg} text="Chez vous, partout et ailleurs" />
       <div className="wrap_allLocation">
         <div className="allLocation">

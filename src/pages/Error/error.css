@@ -1,0 +1,43 @@
+.page_404 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.title_404 {
+    color: #ff6060;
+    font-size: 235px;
+    margin: 50px auto 0;
+}
+.text_404 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #ff6060;
+    font-size: 25px;
+    margin-bottom: 90px;
+}
+.link_404 {
+    display: block;
+    color: #ff6060;
+    align-items: flex-end;
+    text-decoration-line: underline;
+    margin-bottom: 10%;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+.page_404 {
+    margin-top: 70px;
+}
+.title_404 {
+    font-size: 96px;
+}
+.text_404 {
+    flex-direction: column;
+    font-size: 18px;
+    width: 260px;
+    margin: 20px auto;
+}
+.link_404 {
+    margin-top: 70px;
+}
+}

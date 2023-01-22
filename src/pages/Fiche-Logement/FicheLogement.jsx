@@ -7,7 +7,7 @@ import Rate from "../../components/Rate/Rate";
 import Tags from "../../components/Tags/tags";
 import Host from "../../components/Host/Host";
 import { Redirect } from "react-router";
-import "../Fiche-Logement/FicheLogement.scss";
+import "../Fiche-Logement/FicheLogement.css";
 
 function FicheLogement() {
   const pickedRent = useParams();

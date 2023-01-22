@@ -1,6 +1,6 @@
 import Star from "../../assets/Star.svg";
 import FullStar from "../../assets/FullStar.svg";
-import "./Rate.scss";
+import "./Rate.css";
 
 const rentalRate = ({ rate }) => {
   const rateScale = [1, 2, 3, 4, 5];

@@ -60,4 +60,8 @@
 .vector-dd img {
     width: 13px;
 }
+.text-dd {
+    font-size: 12px;
+    padding: 13px 9px 35px 8px;
+}
 }

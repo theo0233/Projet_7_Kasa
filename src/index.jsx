@@ -1,5 +1,5 @@
 import routes from "./routes";
-import "./style/main.scss";
+import "./style/main.css";
 import { createRoot } from "react-dom/client";
 
 const container = document.getElementById("root");

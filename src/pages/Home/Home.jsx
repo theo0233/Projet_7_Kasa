@@ -1,5 +1,5 @@
 import homeImg from "../../assets/IMG_home.png";
-import "./Home.scss";
+import "./Home.css";
 import Hosts from "../../assets/data/logements.json";
 import { Link } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";

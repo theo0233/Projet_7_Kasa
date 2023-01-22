@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import RightVector from "../../assets/VectorRight.png";
 import LeftVector from "../../assets/VectorLeft.png";
-import "../Slider/Slider.scss";
+import "../Slider/Slider.css";
 
 const PicturesSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

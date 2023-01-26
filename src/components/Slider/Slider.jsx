@@ -22,7 +22,9 @@ const PicturesSlider = ({ slides }) => {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
-
+  if (slides.length === 1) {
+    return <div style={slideImg} className="slideStyle"></div>;
+  }
   return (
     <div className="sliderStyle">
       <div className="leftArrow" onClick={goPrevious}>

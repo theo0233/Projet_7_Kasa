@@ -11,8 +11,6 @@ Les maquettes ainsi que les ressources nécessaires m'ont été transmises via [
 
 ### Contraintes fonctionnelles
 
-
-
 ● Pour le défilement des photos dans la galerie (composant Gallery) : </br>
     _Si l'utilisateur se trouve à la première image et qu'il clique sur "Image précédente", la galerie affiche la dernière image. </br> 
     _Inversement, quand l'image affichée est la dernière de la galerie, si l'utilisateur clique sur "Image suivante", la galerie affiche la première image.</br> 
@@ -22,8 +20,19 @@ Les maquettes ainsi que les ressources nécessaires m'ont été transmises via [
 ● Si le Collapse est ouvert, le clic de l'utilisateur permet de le fermer.</br>
     _Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.</br>
 
-### Installation du projet 
 
+### Contraintes techniques
+
+React :
+Il est impératif d’utiliser ces éléments de React pour un code de qualité :</br>
+● Découpage en composants modulaires et réutilisables ;</br>
+● Un composant par fichier ;</br>
+● Structure logique des différents fichiers ;</br>
+● Utilisation des props entre les composants ;</br>
+● Utilisation du state dans les composants quand c'est nécessaire ;</br>
+● Gestion des événements ;
+
+### Installation du projet 
 
 ```bash
 git clone https://github.com/theo0233/Projet_7_Kasa.git
